@@ -68,8 +68,8 @@ $currentEntry = $data[$_SESSION['current']];
 echo '<center><h1>Under Construction!</h1>';
 echo '<h2>' . $currentEntry['sensenameLabel'] . '</h2>';
 echo '<img src="' . $currentEntry['images'] . '?width=250" alt="' . $currentEntry['sensenameLabel'] . '">';
-echo '<h2>' . $currentEntry['lemmas'] . '</h2></center>';
-echo '<h2>' . $nextIndex . '/' . count($data) . '</h2></center>';
+echo '<h2>' . $currentEntry['lemmas'] . '</h2>';
+echo '<h2>' . $_SESSION['current'] . '/' . count($data) . '</h2></center>';
 echo '<hr>';
 
 // Display Next button
